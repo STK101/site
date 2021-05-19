@@ -11,9 +11,9 @@
     --fw-reg: 300;
     --fw-bold: 900;
 
-    --clr-light: #fff;
-    --clr-dark: #303030;
-    --clr-accent: #16e0bd;
+    --clr-light: #B3B3B3;
+    --clr-dark: #121212;
+    --clr-accent: #800800;
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -56,7 +56,7 @@ section {
     padding: 5em 2em;
 }
 
-:focus{ 
+:focus { 
     outline: 3px solid var(--clr-accent);
     outline-offset: 3px;
 }
@@ -67,7 +67,7 @@ section {
     display: inline-block;
     padding: .5em 2.5em;
     background: var(--clr-accent);
-    color: var(--clr-accent);
+    color: var(--clr-dark);
     text-decoration: none;
     cursor: pointer;
     font-size: 0.8rem;
@@ -75,6 +75,9 @@ section {
     letter-spacing: 2px;
     font-weight: var(--fw-bold);
     transition: transform 200ms ease-in-out;
+}
+.btn:hover {
+    transform: scale(1.1);
 }
 /* typography */
 h1,
@@ -275,9 +278,9 @@ header{
 
 .my-interests {
     background-color: var(--clr-dark);
-    background-image: url(../#);
+    background-image: url(../img/super-mario-pixel-art-super-mario-kart-computer-mushroom-hd-wallpaper-preview.jpeg);
     background-size: cover;
-    /* background-blend-mode: multiply; */
+    background-blend-mode: color; 
     color : var(--clr-light);
     text-align: center;
 }
@@ -303,6 +306,7 @@ header{
     max-width : 500px;
     margin: 0 auto;
 }
+
 @media (min-width: 800px) {
     .interests {
         display: flex;
@@ -311,8 +315,8 @@ header{
         margin-right: auto;
     }
 
-    .interest + .interests{
-        margin-left: 0.2em;
+    .interest + .interest{
+        margin-left: 2em;
     }
 }
 
