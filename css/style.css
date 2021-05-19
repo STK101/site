@@ -91,11 +91,11 @@ h3{ font-size: var(--fs-h3)}
 .section__title {
     margin-bottom: 0.25em;
 }
-.section__subtitle--intro{
+.section__title--intro{
     font-weight: var(--fw-reg);
 }
 
-.section__subtitle--intro strong {
+.section__title--intro strong {
     display: block;
 }
 
